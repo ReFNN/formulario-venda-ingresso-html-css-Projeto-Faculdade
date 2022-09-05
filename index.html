@@ -37,6 +37,8 @@
                         <label for="lastname">Sobrenome</label>
                         <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
                     </div>
+                </div>
+                <div class="input-group">
                     <div class="input-box">
                         <label for="email">E-mail</label>
                         <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
@@ -47,50 +49,72 @@
                         <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
                     </div>
 
-                    <div class="input-box">
-                        <label for="password">Local</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
-                    </div>
-
-
-                    <div class="input-box">
-                        <label for="confirmPassword">Horário</label>
-                        <input id="confirmPassword" type="password" name="confirmPassword"
-                            placeholder="Digite sua senha novamente" required>
-                    </div>
-
                 </div>
 
                 <div class="gender-inputs">
                     <div class="gender-title">
-                        <h6>Gênero</h6>
+                        <h6>Tipo de Ingresso</h6>
                     </div>
 
                     <div class="gender-group">
                         <div class="gender-input">
-                            <input id="female" type="radio" name="gender">
-                            <label for="female">Feminino</label>
+                            <input id="dublado" type="radio" name="tipoIngresso" required>
+                            <label for="dublado">Dublado</label>
                         </div>
 
                         <div class="gender-input">
-                            <input id="male" type="radio" name="gender">
-                            <label for="male">Masculino</label>
+                            <input id="legendado" type="radio" name="tipoIngresso" required>
+                            <label for="legendado">Legendado</label>
                         </div>
 
                         <div class="gender-input">
-                            <input id="others" type="radio" name="gender">
-                            <label for="others">Outros</label>
+                            <input id="3d" type="radio" name="tipoIngresso" required>
+                            <label for="3d">3D</label>
                         </div>
 
                         <div class="gender-input">
-                            <input id="none" type="radio" name="gender">
-                            <label for="none">Prefiro não dizer</label>
+                            <input id="vip" type="radio" name="tipoIngresso" required>
+                            <label for="vip">VIP</label>
                         </div>
+                    </div>
+                </div>
+                <div class="sale-inputs">
+                    <div class="input-box">
+                        <label for="local">Local</label>
+                        <select name="local" id="local" required>
+                            <option value="">Escolha o local</option>
+                            <option value="BS">Cinépolis - Boulevard Shopping</option>
+                            <option value="SPB">Moviecom - Shopping Pátio Belém</option>
+                            <option value="PS">Cinépolis - Parque Shopping</option>
+                            <option value="CAS">Moviecom - Castanheira</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="horario">Horário</label>
+                        <select name="horario" id="horario" required>
+                            <option value="">Escolha o horário</option>
+                            <option value="10">Sessão 10h</option>
+                            <option value="1115">Sessão 11h15</option>
+                            <option value="14">Sessão 14h</option>
+                            <option value="1545">Sessão 15h45</option>
+                            <option value="18">Sessão 18h</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="horario">Data</label>
+                        <select name="data" id="data" required>
+                            <option value="">Escolha o data</option>
+                            <option value="10">10/09/2022</option>
+                            <option value="11">11/09/2022</option>
+                            <option value="12">12/09/2022</option>
+                            <option value="13">13/09/2022</option>
+                            <option value="14">14/09/2022</option>
+                        </select>
                     </div>
                 </div>
 
                 <div class="continue-button">
-                    <button><a href="#">Continuar</a> </button>
+                    <button><a href="#">Comprar agora</a> </button>
                 </div>
             </form>
         </div>

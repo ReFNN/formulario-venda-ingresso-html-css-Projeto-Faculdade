@@ -23,7 +23,7 @@ body {
     width: 80%;
     height: 80vh;
     display: flex;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.781);
 }
 
 .form-image {
@@ -93,26 +93,33 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 0 0;
 }
 
 .input-box {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
+    margin-inline: 2.1rem;
 }
 
 .input-box input {
+    width: 260px;
+}
+
+.input-box input,
+.sale-inputs select {
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
     border: none;
     border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
+    box-shadow: 1px 1px 6px #0000007a;
     font-size: 0.8rem;
 }
 
-.input-box input:hover {
-    background-color: #eeeeee75;
+.input-box input:hover,
+.sale-inputs select:hover {
+    background-color: #b1b1b175;
 }
 
 .input-box input:focus-visible {
@@ -120,10 +127,15 @@ body {
 }
 
 .input-box label,
+.sale-group label,
 .gender-title h6 {
     font-size: 0.75rem;
     font-weight: 600;
     color: #000000c0;
+}
+
+.input-inputs label {
+    margin-top: 1rem;
 }
 
 .input-box input::placeholder {
@@ -137,13 +149,36 @@ body {
     padding: 0 .5rem;
 }
 
-.gender-input {
+.sale-inputs {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.sale-inputs select {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #00000098;
+    font-size: 0.8rem;
+}
+
+.gender-inputs {
+    width: 582px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.gender-input input {
-    margin-right: 0.35rem;
+.gender-inputs h6 {
+    font-size: 1rem;
+}
+
+.gender-inputs input {
+    margin-left: 5rem;
 }
 
 .gender-input label {
@@ -154,7 +189,7 @@ body {
 
 .continue-button button {
     width: 100%;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     border: none;
     background-color: #ff1d1d;
     padding: 0.62rem;
@@ -172,6 +207,7 @@ body {
     font-weight: 500;
     color: #fff;
 }
+
 
 @media screen and (max-width: 1330px) {
     .form-image {
