@@ -2,123 +2,122 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Venda de Ingressos</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Venda de Ingressos</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="form-image">
-            <img src="./assets/img/tickets_pic.png" alt="">
-        </div>
-        <div class="form">
-            <form action="#">
-                <div class="form-header">
-                    <div class="title">
-                        <h1>HOMEM-TEIA 2 <br>
-                            Compre seu ingresso</h1>
-                    </div>
-                    <div class="login-button">
-                        <button type="reset"><a href="#">Limpar</a></button>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="firstname">Primeiro Nome</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome"
-                            required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
-                    </div>
-                </div>
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="number">Celular</label>
-                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
-                    </div>
-
-                </div>
-
-                <div class="gender-inputs">
-                    <div class="gender-title">
-                        <h6>Tipo de Ingresso</h6>
-                    </div>
-
-                    <div class="gender-group">
-                        <div class="gender-input">
-                            <input id="dublado" type="radio" name="tipoIngresso" required>
-                            <label for="dublado">Dublado</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="legendado" type="radio" name="tipoIngresso" required>
-                            <label for="legendado">Legendado</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="3d" type="radio" name="tipoIngresso" required>
-                            <label for="3d">3D</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="vip" type="radio" name="tipoIngresso" required>
-                            <label for="vip">VIP</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="sale-inputs">
-                    <div class="input-box">
-                        <label for="local">Local</label>
-                        <select name="local" id="local" required>
-                            <option value="">Escolha o local</option>
-                            <option value="BS">Cinépolis - Boulevard Shopping</option>
-                            <option value="SPB">Moviecom - Shopping Pátio Belém</option>
-                            <option value="PS">Cinépolis - Parque Shopping</option>
-                            <option value="CAS">Moviecom - Castanheira</option>
-                        </select>
-                    </div>
-                    <div class="input-box">
-                        <label for="horario">Horário</label>
-                        <select name="horario" id="horario" required>
-                            <option value="">Escolha o horário</option>
-                            <option value="10">Sessão 10h</option>
-                            <option value="1115">Sessão 11h15</option>
-                            <option value="14">Sessão 14h</option>
-                            <option value="1545">Sessão 15h45</option>
-                            <option value="18">Sessão 18h</option>
-                        </select>
-                    </div>
-                    <div class="input-box">
-                        <label for="horario">Data</label>
-                        <select name="data" id="data" required>
-                            <option value="">Escolha o data</option>
-                            <option value="10">10/09/2022</option>
-                            <option value="11">11/09/2022</option>
-                            <option value="12">12/09/2022</option>
-                            <option value="13">13/09/2022</option>
-                            <option value="14">14/09/2022</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="continue-button">
-                    <button><a href="#">Comprar agora</a> </button>
-                </div>
-            </form>
-        </div>
+  <div class="container">
+    <div class="form-image">
+      <img src="./assets/img/tickets_pic.png" alt="">
     </div>
+    <div class="form">
+      <form action="./finish.html">
+        <div class="form-header">
+          <div class="title">
+            <h1>HOMEM-TEIA 2 <br>
+              Compre seu ingresso</h1>
+          </div>
+          <div class="login-button">
+            <button type="reset"><a href="#">Limpar</a></button>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-box">
+            <label for="firstname">Primeiro Nome</label>
+            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+          </div>
+
+          <div class="input-box">
+            <label for="lastname">Sobrenome</label>
+            <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+          </div>
+
+          <div class="input-box">
+            <label for="number">Celular</label>
+            <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+          </div>
+
+        </div>
+
+        <div class="gender-inputs">
+          <div class="gender-title">
+            <h6>Tipo de Ingresso</h6>
+          </div>
+
+          <div class="gender-group">
+            <div class="gender-input">
+              <input id="dublado" type="radio" name="tipoIngresso" required>
+              <label for="dublado">Dublado</label>
+            </div>
+
+            <div class="gender-input">
+              <input id="legendado" type="radio" name="tipoIngresso" required>
+              <label for="legendado">Legendado</label>
+            </div>
+
+            <div class="gender-input">
+              <input id="3d" type="radio" name="tipoIngresso" required>
+              <label for="3d">3D</label>
+            </div>
+
+            <div class="gender-input">
+              <input id="vip" type="radio" name="tipoIngresso" required>
+              <label for="vip">VIP</label>
+            </div>
+          </div>
+        </div>
+        <div class="sale-inputs">
+          <div class="input-box">
+            <label for="local">Local</label>
+            <select name="local" id="local" required>
+              <option value="">Escolha o local</option>
+              <option value="BS">Cinépolis - Boulevard Shopping</option>
+              <option value="SPB">Moviecom - Shopping Pátio Belém</option>
+              <option value="PS">Cinépolis - Parque Shopping</option>
+              <option value="CAS">Moviecom - Castanheira</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <label for="horario">Horário</label>
+            <select name="horario" id="horario" required>
+              <option value="">Escolha o horário</option>
+              <option value="10">Sessão 10h</option>
+              <option value="1115">Sessão 11h15</option>
+              <option value="14">Sessão 14h</option>
+              <option value="1545">Sessão 15h45</option>
+              <option value="18">Sessão 18h</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <label for="horario">Data</label>
+            <select name="data" id="data" required>
+              <option value="">Escolha o data</option>
+              <option value="10">Sábado - 10/09/2022</option>
+              <option value="11">Domingo - 11/09/2022</option>
+              <option value="12">Segunda-Feira - 12/09/2022</option>
+              <option value="13">Terça-Feira - 13/09/2022</option>
+              <option value="14">Quarta-Feira - 14/09/2022</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="continue-button">
+          <button><a href="#">Comprar agora</a> </button>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>

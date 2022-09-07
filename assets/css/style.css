@@ -35,7 +35,7 @@ body {
     padding: 1rem;
 }
 
-.form-image img {
+.form-image img, .form-image2 img {
     width: 31rem;
 }
 
@@ -253,4 +253,25 @@ body {
     .gender-input {
         margin-top: 0.5rem;
     }
+}
+
+#label-feedback {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+textarea{
+  font-size: 1rem;
+  border: 1px solid #7d7d7d;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000007a;
+}
+
+.form-image2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(165, 255, 158);
+    padding: 1rem;
 }
